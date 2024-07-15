@@ -1,0 +1,257 @@
+.main {
+    &__top {
+        display: flex;
+        align-items: center;
+        padding-top: 80px;
+        margin-left: 72px;
+    }
+
+    &__top-title {
+        width: 764px;
+        font-family: "Merriweather", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 135%;
+        letter-spacing: 0px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #313131;
+    }
+
+    &__top-title-red {
+        font-weight: 700;
+        color: #f54932;
+    }
+
+    &__top-img {
+        margin-left: 64px;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+.content {
+    display: flex;
+    margin-bottom: 200px;
+
+    &__left {
+        width: 474px;
+        margin: 17px 17px 0px 45px;
+    }
+
+    &__left-img {
+        width: 100%;
+    }
+
+    &__right {
+        width: 704px;
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-title {
+        font-family: "Merriweather", sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 135%;
+        text-transform: uppercase;
+        color: #313131;
+    }
+
+    &__right-title-red {
+        font-weight: 700;
+        color: #f54932;
+    }
+
+    &__right-desk {
+        position: relative;
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .key {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .key-text {
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #313131;
+        opacity: 0.7;
+        padding-right: 16px;
+    }
+
+    .key-text:not(:first-child) {
+        padding-top: 16px;
+    }
+
+    .key-text:not(:last-child) {
+        border-bottom: 2px solid rgb(208, 208, 208);
+        padding-bottom: 16px;
+    }
+
+    .meaning {
+        display: flex;
+        flex-direction: column;
+        width: 352px;
+
+    }
+
+    .meaning-text {
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #313131;
+        padding-left: 16px;
+        border-left: 2px solid rgb(208, 208, 208);
+    }
+
+    .meaning-text:not(:first-child) {
+        padding-top: 16px;
+    }
+
+    .meaning-text:not(:last-child) {
+        border-bottom: 2px solid rgb(208, 208, 208);
+        padding-bottom: 16px;
+    }
+
+    del {
+        color: rgb(245, 73, 50);
+    }
+
+    // .line-one {
+    //     position: absolute;
+    //     top: 40px;
+    // }
+
+    // .line-two {
+    //     position: absolute;
+    //     top: 96px;
+
+    // }
+
+    // .line-three {
+    //     position: absolute;
+    //     top: 152px;
+    // }
+
+    // .line-four {
+    //     position: absolute;
+    //     top: 208px;
+    // }
+
+    // .line-five {
+    //     position: absolute;
+    //     left: 43%;
+    // }
+
+    &__right-link {
+        text-decoration: none;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #3057a2;
+        margin-top: 48px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .main {
+        &__top {
+            flex-direction: column;
+            padding-top: 48px;
+            margin-left: 20px;
+        }
+
+        &__top-title {
+            font-size: 28px;
+            width: 335px;
+        }
+
+        &__top-img {
+            padding-top: 24px;
+            margin-left: 0px;
+            width: 335px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .none {
+            display: block;
+            font-family: "Merriweather", sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 135%;
+            text-transform: uppercase;
+            color: #313131;
+            padding-top: 24px;
+            width: 335px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 34px;
+        margin-bottom: 120px;
+
+        &__left {
+            width: 335px;
+            margin-left: 20px;
+        }
+
+        &__right {
+            width: 335px;
+            margin-left: 20px;
+
+        }
+
+        &__right-title {
+            font-size: 28px;
+        }
+
+        &__right-desk {
+            margin-top: 44px;
+        }
+
+        .key {
+            width: 167px;
+        }
+
+        .key-text {
+            font-size: 16px;
+        }
+
+        .meaning {
+            width: 167px;
+        }
+
+        .meaning-text {
+            font-size: 16px;
+
+        }
+
+        .meaning-text:not(:last-child) {
+            padding-bottom: 20px;
+        }
+
+
+
+        &__right-link {
+            margin-top: 40px;
+        }
+
+    }
+}

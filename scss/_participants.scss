@@ -1,0 +1,187 @@
+.participants {
+    &__heading {
+        font-family: "Merriweather", sans-serif;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #313131;
+        text-align: left;
+        margin-bottom: 60px;
+        margin-left: 72px;
+    }
+}
+
+.swiper-container {
+    margin-left: 72px;
+    margin-bottom: 120px;
+    max-width: 1366px;
+    position: relative;
+    overflow: hidden;
+
+    .swiper {
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 394px;
+        }
+
+        &__img {
+            padding-bottom: 28px;
+        }
+
+        &__title {
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: #313131;
+            padding-bottom: 6px;
+        }
+
+        &__desk {
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            color: #313131;
+            opacity: 0.6;
+            padding-bottom: 20px;
+        }
+
+        &__btn-box {
+            display: flex;
+        }
+
+        &__btn {
+            text-decoration: none;
+            cursor: pointer;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: #3057a2;
+            padding: 12px;
+            border: 1px solid rgb(48, 87, 162);
+            border-radius: 62px;
+        }
+    }
+}
+
+.swiper__btn:hover {
+    background: #3057a2;
+    color: #fff;
+    transition: 0.3s all;
+}
+
+
+.swiper-button-prev {
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 60%;
+    padding: 22px;
+    top: 6%;
+    right: 0;
+    left: 84%;
+}
+
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+.swiper-button-prev:hover {
+    background: rgb(251, 206, 81);
+    transition: 0.3s all;
+}
+
+.swiper-button-next {
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    border-radius: 60%;
+    padding: 22px;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+}
+
+.swiper-button-next::after {
+    font-size: 20px;
+}
+
+.swiper-button-next:hover {
+    background: rgb(251, 206, 81);
+    transition: 0.3s all;
+}
+
+.swiper-pagination {
+    color: rgb(49, 49, 49);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0px;
+    width: 40px;
+    position: absolute;
+    top: 4%;
+    left: 88%;
+    pointer-events: none;
+}
+
+.swiper-slide {
+    cursor: grab;
+}
+
+.swiper-slide:active {
+    cursor: grabbing;
+}
+
+@media (max-width: 375px) {
+    .participants {
+        &__heading {
+            font-size: 36px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .swiper-container {
+            margin-left: 20px;
+            margin-bottom: 140px;
+        }
+
+        .swiper {
+            &__card {
+                width: 335px;
+            }
+
+            &__img {
+                width: 73%;
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        top: 109%;
+        left: 30%;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 16px;
+    }
+
+    .swiper-button-next {
+        top: 109%;
+        right: 30%;
+    }
+
+    .swiper-button-next::after {
+        font-size: 16px;
+    }
+
+    .swiper-pagination {
+        top: 107%;
+        left: 45%;
+    }
+}

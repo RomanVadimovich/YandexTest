@@ -1,0 +1,22 @@
+.footer {
+    background-color: rgb(233, 222, 212);
+
+    &__text {
+        text-align: left;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #313131;
+        opacity: 0.6;
+        padding: 53px 72px 72px 72px;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        &__text {
+            padding: 40px 20px 60px 20px;
+        }
+    }
+}

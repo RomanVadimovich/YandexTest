@@ -1,0 +1,208 @@
+.stages {
+
+    &__box {
+        position: relative;
+    }
+
+    &__title {
+        font-family: "Merriweather", sans-serif;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #313131;
+        margin-left: 72px;
+        width: 806px;
+    }
+
+    &__title-link {
+        font-family: "Golos Text", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #3057a2;
+        text-decoration: none;
+        position: absolute;
+        top: 72px;
+        left: 372px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(3, 394px);
+        gap: 20px;
+        margin-top: 54px;
+        margin-bottom: 200px;
+        margin-left: 72px;
+        position: relative;
+    }
+
+    &__card {
+        display: flex;
+        gap: 16px;
+        background-image: url('../image/main/image\ 23.png');
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Golos Text", sans-serif;
+        border-radius: 60px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        font-weight: 600;
+        background: #fff;
+        margin-left: 20px;
+        margin-top: 20px;
+
+    }
+
+    &__text {
+        text-align: left;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #313131;
+        width: 302px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    &__text-width {
+        width: 446px;
+    }
+
+    &__card-row {
+        grid-row: span 2;
+    }
+
+    &__card-column {
+        grid-column: span 2;
+    }
+
+    &__img {
+        position: absolute;
+        right: -10px;
+        bottom: -2px;
+    }
+
+    .swiper-container {
+        display: none;
+    }
+
+    .swiper2-img-box {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .stages {
+        &__title-box {
+            margin-bottom: 148px;
+        }
+
+        &__title {
+            font-size: 36px;
+            margin-left: 20px;
+            padding-bottom: 12px;
+            width: 335px;
+        }
+
+        &__title-link {
+            position: relative;
+            top: 0;
+            left: 20px
+        }
+
+
+        &__box {
+            display: none;
+        }
+
+        .swiper2 {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            margin-left: 20px;
+            margin-bottom: 120px;
+        }
+
+        .swiper2-img-box {
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            width: 320px;
+            z-index: 100;
+            top: 33%;
+            left: 10%;
+        }
+
+        .swiper2-img {
+            width: 100%;
+        }
+
+        .swiper-card {
+            background: #d9d9d9;
+            width: 335px;
+            height: 300px;
+        }
+
+        .swiper-card-box {
+            display: flex;
+
+        }
+
+        .swiper-card-box:not(:last-child) {
+            padding-top: 62px;
+        }
+
+        .swiper-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Golos Text", sans-serif;
+            border-radius: 60px;
+            width: 36px;
+            height: 36px;
+            font-size: 20px;
+            font-weight: 600;
+            background: #fff;
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 16px;
+        }
+
+        .swiper-text {
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 120%;
+            color: #313131;
+            width: 243px;
+            padding-bottom: 28px;
+
+        }
+
+        .swiper-card-box-padtop {
+            padding-top: 62px;
+        }
+
+        .swiper-pagination-bullets {
+            color: rgb(217, 217, 217);
+        }
+
+        .swiper-pagination-bullets-active {
+            color: rgb(49, 49, 49);
+        }
+    }
+
+
+
+
+}
